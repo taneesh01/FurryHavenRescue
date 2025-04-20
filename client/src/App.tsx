@@ -3,6 +3,8 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { CartProvider } from "@/context/CartContext";
+import { Cart } from "@/components/ui/cart";
 import NotFound from "@/pages/not-found";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
@@ -18,6 +20,7 @@ function Router() {
   return (
     <>
       <Navbar />
+      <Cart />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -37,8 +40,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Router />
+        <CartProvider>
+          <Toaster />
+          <Router />
+        </CartProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );

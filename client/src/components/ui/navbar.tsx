@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { PawPrint } from "lucide-react";
+import { CartIcon } from "@/components/ui/cart";
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
   const [location] = useLocation();
@@ -45,6 +46,9 @@ export default function Navbar() {
           <NavLink href="/donate">Donate</NavLink>
           <NavLink href="/shop">Shop</NavLink>
           <NavLink href="/newsletter">Newsletter</NavLink>
+          <div className="ml-2">
+            <CartIcon />
+          </div>
           <Link href="/signup">
             <Button className="bg-primary text-white hover:bg-primary/90 rounded-full">Sign Up</Button>
           </Link>
@@ -73,6 +77,10 @@ export default function Navbar() {
             <NavLink href="/donate">Donate</NavLink>
             <NavLink href="/shop">Shop</NavLink>
             <NavLink href="/newsletter">Newsletter</NavLink>
+            <div className="flex items-center py-2">
+              <span className="font-medium mr-2">Cart</span>
+              <CartIcon />
+            </div>
             <Link href="/signup">
               <Button className="bg-primary text-white hover:bg-primary/90 rounded-full w-full">Sign Up</Button>
             </Link>

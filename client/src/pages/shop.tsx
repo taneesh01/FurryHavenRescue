@@ -3,24 +3,28 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
+import { useCart } from "@/context/CartContext";
 import { ShoppingCart, ArrowRight, Star, StarHalf } from "lucide-react";
 import type { ShopItem } from "@shared/schema";
 
 export default function Shop() {
   const { toast } = useToast();
+  const { addToCart } = useCart();
   
   const { data: shopItems, isLoading } = useQuery<ShopItem[]>({
     queryKey: ["/api/shop"],
   });
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (item: ShopItem) => {
+    addToCart(item);
     toast({
       title: "Added to Cart",
-      description: "Item has been added to your cart successfully.",
+      description: `${item.name} has been added to your cart successfully.`,
     });
   };
 
-  const handleBuyNow = () => {
+  const handleBuyNow = (item: ShopItem) => {
+    addToCart(item);
     toast({
       title: "Proceeding to Checkout",
       description: "Feature coming soon.",
