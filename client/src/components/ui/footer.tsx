@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <MapPin className="mt-1 mr-3 text-[#F0945A]" size={18} />
-                <span className="text-gray-300">123 Rescue Street, Bangalore, Karnataka, India - 560001</span>
+                <span className="text-gray-300">123 Rescue Street, New Delhi, Delhi, India - 110001</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 text-[#F0945A]" size={18} />
@@ -85,7 +85,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} FurryHaven. All rights reserved.</p>
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} FurryHaven. All rights reserved. Licensed under MIT.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
