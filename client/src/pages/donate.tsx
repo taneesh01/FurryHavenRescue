@@ -61,11 +61,11 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-[#F0945A] h-2 rounded-full" style={{width: "42%"}}></div>
+                  <div className="bg-[#F0945A] h-2 rounded-full" style={{width: "25%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹8,500 raised</span>
-                  <span>₹20,000 goal</span>
+                  <span>₹2,500 raised</span>
+                  <span>₹10,000 goal</span>
                 </div>
               </div>
               <div className="space-y-3 mb-6">
@@ -108,11 +108,11 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-primary h-2 rounded-full" style={{width: "36%"}}></div>
+                  <div className="bg-primary h-2 rounded-full" style={{width: "20%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹18,000 raised</span>
-                  <span>₹50,000 goal</span>
+                  <span>₹4,000 raised</span>
+                  <span>₹20,000 goal</span>
                 </div>
               </div>
               <div className="space-y-3 mb-6">
@@ -155,11 +155,11 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-[#6BBBDB] h-2 rounded-full" style={{width: "25%"}}></div>
+                  <div className="bg-[#6BBBDB] h-2 rounded-full" style={{width: "15%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹12,500 raised</span>
-                  <span>₹50,000 goal</span>
+                  <span>₹2,250 raised</span>
+                  <span>₹15,000 goal</span>
                 </div>
               </div>
               <div className="space-y-3 mb-6">
@@ -195,7 +195,7 @@ export default function Donate() {
         <Card className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
           <h3 className="font-heading font-bold text-2xl text-gray-800 mb-6 text-center">Custom Donation</h3>
           <div className="grid grid-cols-3 gap-4 mb-6">
-            {["100", "500", "1000", "2000", "5000"].map((amount) => (
+            {["50", "100", "250", "500", "1000"].map((amount) => (
               <Button 
                 key={amount}
                 variant={selectedAmount === amount ? "default" : "outline"} 

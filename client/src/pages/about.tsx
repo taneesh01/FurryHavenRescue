@@ -32,7 +32,7 @@ export default function About() {
               <p className="text-lg italic text-gray-700 font-serif">
                 "Every rescue begins with someone who refused to look the other way. We're building a community of those someones."
               </p>
-              <p className="mt-2 text-gray-600 font-medium">— Priya Sharma, Founder</p>
+              <p className="mt-2 text-gray-600 font-medium">— Taneesh Arora, Pranav Shekhar, and Aman Kalsi, Founders</p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
