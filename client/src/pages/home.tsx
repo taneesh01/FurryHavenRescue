@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Heart, BadgeCent, Info, ChevronRight, PawPrint } from "lucide-react";
+import { Heart, BadgePercent, Info, ChevronRight, PawPrint } from "lucide-react";
 import type { Animal } from "@shared/schema";
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
                 </Link>
                 <Link href="/donate">
                   <Button className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full">
-                    <BadgeCent className="mr-2 h-4 w-4" /> BadgeCent
+                    <BadgePercent className="mr-2 h-4 w-4" /> Donate
                   </Button>
                 </Link>
                 <Link href="/about">

@@ -243,7 +243,7 @@ export default function Donate() {
             className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg"
             onClick={handleDonateClick}
           >
-            Proceed to BadgeCent
+            Proceed to Donate
           </Button>
         </Card>
       </div>
