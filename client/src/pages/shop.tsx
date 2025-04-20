@@ -98,13 +98,13 @@ export default function Shop() {
                     <Button 
                       variant="outline" 
                       className="flex-1 bg-white border border-primary text-primary hover:bg-primary hover:text-white"
-                      onClick={handleAddToCart}
+                      onClick={() => handleAddToCart(item)}
                     >
                       <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
                     </Button>
                     <Button 
                       className="flex-1 bg-primary hover:bg-primary/90 text-white"
-                      onClick={handleBuyNow}
+                      onClick={() => handleBuyNow(item)}
                     >
                       Buy Now
                     </Button>

@@ -10,9 +10,9 @@ const NavLink = ({ href, children }: { href: string, children: React.ReactNode }
   
   return (
     <Link href={href}>
-      <a className={`font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>
+      <span className={`font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'} cursor-pointer`}>
         {children}
-      </a>
+      </span>
     </Link>
   );
 };
@@ -28,14 +28,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/">
-          <a className="flex items-center">
+          <div className="flex items-center cursor-pointer">
             <div className="text-primary text-3xl mr-2">
               <PawPrint />
             </div>
             <div>
               <span className="font-heading font-bold text-xl text-primary">Furry<span className="text-[#F0945A]">Haven</span></span>
             </div>
-          </a>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
