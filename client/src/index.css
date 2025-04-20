@@ -11,3 +11,24 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Cart Animation Styles */
+  .cart-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .cart-overlay.active {
+    opacity: 1;
+  }
+  
+  .cart-panel {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart-panel.active {
+    transform: translateX(0);
+  }
+}

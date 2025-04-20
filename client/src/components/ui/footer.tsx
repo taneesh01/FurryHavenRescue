@@ -33,12 +33,12 @@ export default function Footer() {
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/"><a className="text-gray-300 hover:text-white transition-colors">Home</a></Link></li>
-              <li><Link href="/about"><a className="text-gray-300 hover:text-white transition-colors">About Us</a></Link></li>
-              <li><Link href="/adopt"><a className="text-gray-300 hover:text-white transition-colors">Adopt</a></Link></li>
-              <li><Link href="/donate"><a className="text-gray-300 hover:text-white transition-colors">Donate</a></Link></li>
-              <li><Link href="/shop"><a className="text-gray-300 hover:text-white transition-colors">Shop</a></Link></li>
-              <li><Link href="/newsletter"><a className="text-gray-300 hover:text-white transition-colors">Newsletter</a></Link></li>
+              <li><Link href="/"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Home</span></Link></li>
+              <li><Link href="/about"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">About Us</span></Link></li>
+              <li><Link href="/adopt"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Adopt</span></Link></li>
+              <li><Link href="/donate"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Donate</span></Link></li>
+              <li><Link href="/shop"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Shop</span></Link></li>
+              <li><Link href="/newsletter"><span className="text-gray-300 hover:text-white transition-colors cursor-pointer">Newsletter</span></Link></li>
             </ul>
           </div>
           

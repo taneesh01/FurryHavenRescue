@@ -47,12 +47,12 @@ export function Cart() {
     <div className="cart-container">
       {/* Overlay */}
       <div 
-        className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity" 
+        className="fixed inset-0 bg-black bg-opacity-50 z-40 cart-overlay active" 
         onClick={toggleCart}
       />
       
       {/* Cart panel */}
-      <div className="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-xl z-50 transform transition-transform">
+      <div className="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-xl z-50 cart-panel active">
         <div className="flex flex-col h-full">
           <div className="flex justify-between items-center p-4 border-b">
             <h2 className="font-heading font-bold text-xl">Your Cart</h2>
