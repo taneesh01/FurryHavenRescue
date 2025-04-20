@@ -61,10 +61,10 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-[#F0945A] h-2 rounded-full" style={{width: "75%"}}></div>
+                  <div className="bg-[#F0945A] h-2 rounded-full" style={{width: "42%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹15,000 raised</span>
+                  <span>₹8,500 raised</span>
                   <span>₹20,000 goal</span>
                 </div>
               </div>
@@ -108,10 +108,10 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-primary h-2 rounded-full" style={{width: "60%"}}></div>
+                  <div className="bg-primary h-2 rounded-full" style={{width: "36%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹30,000 raised</span>
+                  <span>₹18,000 raised</span>
                   <span>₹50,000 goal</span>
                 </div>
               </div>
@@ -155,10 +155,10 @@ export default function Donate() {
               </div>
               <div className="mb-6">
                 <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-[#6BBBDB] h-2 rounded-full" style={{width: "40%"}}></div>
+                  <div className="bg-[#6BBBDB] h-2 rounded-full" style={{width: "25%"}}></div>
                 </div>
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>₹20,000 raised</span>
+                  <span>₹12,500 raised</span>
                   <span>₹50,000 goal</span>
                 </div>
               </div>
